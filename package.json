@@ -1,0 +1,22 @@
+{
+  "name": "mongoose-plugin-model-paginate",
+  "version": "0.0.1-dev",
+  "description": "Plugin que sirve como paginacion en los modelos de mongoose ",
+  "main": "dist/MongooseModelPaginatePlugin.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run tsc && node dist/MongooseModelPaginatePlugin.js"
+  },
+  "keywords": [
+    "mongoose",
+    "plugin",
+    "pagination",
+    "paginate"
+  ],
+  "author": "GussWare",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
