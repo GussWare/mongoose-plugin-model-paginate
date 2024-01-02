@@ -135,4 +135,4 @@ class MongooseModelPaginatePlugin {
     }
 }
 
-export default new MongooseModelPaginatePlugin();
+export default new MongooseModelPaginatePlugin().apply;

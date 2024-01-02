@@ -107,4 +107,4 @@ class MongooseModelPaginatePlugin {
         };
     }
 }
-exports.default = new MongooseModelPaginatePlugin();
+exports.default = new MongooseModelPaginatePlugin().apply;
