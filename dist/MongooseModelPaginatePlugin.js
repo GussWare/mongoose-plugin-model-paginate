@@ -65,12 +65,12 @@ class PaginationHelper {
 }
 class MongooseModelPaginatePlugin {
     apply(schema, optionsSchema) {
-        const { filterSchema = [], columnsShema = [] } = optionsSchema;
+        const { fieldsForFilter = [], fieldsForSearch = [] } = optionsSchema;
         schema.statics.paginate = function (filter, options) {
             return __awaiter(this, void 0, void 0, function* () {
                 const { sort_by, page_size, page, populate, search } = options;
-                const advancedFilter = yield PaginationHelper.advancedFilter(filter, filterSchema);
-                const searchFilter = yield PaginationHelper.search(search, columnsShema);
+                const advancedFilter = yield PaginationHelper.advancedFilter(filter, fieldsForSearch);
+                const searchFilter = yield PaginationHelper.search(search, fieldsForFilter);
                 const filterFind = yield PaginationHelper.filterFind(advancedFilter);
                 if (search) {
                     if (searchFilter.length > 0) {
