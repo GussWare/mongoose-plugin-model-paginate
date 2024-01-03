@@ -18,7 +18,10 @@ El plugin Mongoose Model Paginate es una extensión para el framework Mongoose q
     const mongoose = require('mongoose');
     const modelPaginatePlugin = require('mongoose-plugin-model-paginate');
 
-    mongoose.plugin(modelPaginatePlugin);
+    mongoose.plugin(modelPaginatePlugin, { 
+    fieldsForFilter: ["name", "codename"], 
+    fieldsForSearch: ["name", "codename"] 
+});
     ```
 
 ## Uso

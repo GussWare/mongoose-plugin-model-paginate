@@ -1,25 +1,9 @@
-interface IPaginationResponse {
-    results: any;
-    page: number;
-    page_size: number;
-    num_pages: number;
-    count: number;
-}
-
-interface IPaginationOptions {
-    sort_by: string;
-    page_size: number;
-    page: number;
-    populate: string;
-    search: string;
-}
-
-interface IColumnSearch {
-    [key: string]: {
-        $regex: string;
-        $options: string;
-    };
-}
+// mongoose-plugin-model-paginate.ts
+import {
+    IPaginationResponse,
+    IPaginationOptions,
+    IColumnSearch
+} from '../mongoose-plugin-model-paginate'; 
 
 class PaginationHelper {
     static async advancedFilter(filter: any, filterSchema: string[]) {
