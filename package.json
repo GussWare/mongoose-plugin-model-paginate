@@ -1,6 +1,6 @@
 {
   "name": "mongoose-plugin-model-paginate",
-  "version": "0.0.1",
+  "version": "0.0.3-dev",
   "description": "Plugin que sirve como paginacion en los modelos de mongoose ",
   "main": "dist/MongooseModelPaginatePlugin.js",
   "scripts": {
